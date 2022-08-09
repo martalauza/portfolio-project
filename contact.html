@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
@@ -33,10 +36,11 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-1 navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top p-3 bg-white">
       <div class="container">
-        <a class="navbar-brand" href="/">Marta Lauza</a>
+      <a class="navbar-brand" href="index.html">
+           <img src="images/logo.png" alt="logo" width="50" height="50" title="Marta Lauza | Homepage"/>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,36 +52,63 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/" title="Homepage">Home</a>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="/" title="Homepage">HOME</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mt-3">
               <a class="nav-link" href="/aboutme.html" title="About Marta"
-                >About</a
+                >ABOUT</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item mt-3">
               <a class="nav-link" href="/work.html" title="Marta's work"
-                >Work</a
+                >WORK</a
               >
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="/contact.html"
-                title="Contact Marta"
-                >Contact</a
+            <li class="nav-item mt-3">
+              <a class="nav-link active" href="/contact.html" title="Contact Marta"
+                >CONTACT</a
               >
             </li>
           </ul>
         </div>
+          </div>
+          </div>
       </div>
     </nav>
-    <div class="content- container container">
-      <div class="content">
-        <h1 class="mb-5">Let's get in touch!</h1>
+    <div class="container contact-section ">
+      <h1 class="mb-5">Let's get in touch!</h1>
+       <div class="row">
+          <div class="col-md-8">
+            <form
+              action="https://formspree.io/f/mwkalajy"
+              method="POST"
+              class="border p-3 rounded mb-3"
+            >
+              <div class="mb-3">
+                <label class="form-label"> Your email: </label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  class="form-control"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your message: </label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+               <button type="submit" class="btn btn-branding">Send</button>
+            </form>
+              </div>
+              <div class="contact col-md-4">
         <h3>Email</h3>
         <p>
           <a href="mailto: martalauza@inbox.lv">martalauza@inbox.lv</a>
@@ -95,9 +126,10 @@
           >
         </p>
       </div>
+      </div>
       <footer class="container">
         <div
-          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+          class="contact-box justify-content-between mb-5 d-none d-md-flex"
         >
           <div>
             <h3>Work Inquiry</h3>
@@ -107,7 +139,7 @@
             <a
               href="/contact.html"
               class="btn btn-branding mt-3"
-              title="Contatc Marta"
+              title="Contact Marta"
             >
               Contact me
             </a>
@@ -145,7 +177,7 @@
           </a>
         </div>
         <p class="text-center mt-5">
-          This project was coded by Marta Lauza and it is
+          🌸 This project was coded by Marta Lauza and it is
           <a
             href="https://github.com/martalauza/portfolio-project"
             target="_blank"
