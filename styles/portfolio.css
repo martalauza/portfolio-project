@@ -1,6 +1,6 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #e28ead;
+  --secondary-color: #fce6ee;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -80,6 +80,11 @@ p {
   line-height: 27px;
   padding: 15px 30px;
 }
+.btn-branding:hover {
+  color: var(--branding-color);
+  background-color: white;
+  border-color: var(--branding-color);
+}
 .btn-branding-outline {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
@@ -89,7 +94,7 @@ p {
   border-radius: 4px;
 }
 .project-description {
-  padding: 120px 60px;
+  padding: 40px 40px;
 }
 
 .active {
@@ -98,6 +103,10 @@ p {
 .nav-item {
   padding: 0 10px;
 }
+.photo-about {
+  max-width: 400px;
+}
+
 footer {
   margin: 60px 0;
 }
@@ -142,6 +151,9 @@ footer .contact-box p {
   h3 {
     font-size: 18px;
   }
+  .photo-about {
+    margin-top: 30px;
+  }
 
   .content {
     text-align: center;
@@ -151,13 +163,6 @@ footer .contact-box p {
     padding: 0;
     text-align: center;
   }
-}
-.about-paragraphs {
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
 }
 
 .email-link {
@@ -170,4 +175,8 @@ footer .contact-box p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+a:hover {
+  color: black;
+  border-color: black;
 }
