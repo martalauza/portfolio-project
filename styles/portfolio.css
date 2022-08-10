@@ -36,12 +36,12 @@ p {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 114px 32px 31px 32px;
+  padding: 80px 20px;
 }
 .hero p {
   font-size: 36px;
   font-weight: bold;
-  margin-top: 60px;
+  margin-top: 70px;
   color: #272142;
 }
 .hero h2 {
@@ -53,10 +53,7 @@ p {
 .hero-heading {
   font-size: 90px;
 }
-.container {
-  padding: 0;
-  margin: 20px;
-}
+
 .content-container {
   padding: 60px 20px;
 }
@@ -117,6 +114,7 @@ p {
 }
 .nav-item {
   padding: 0 10px;
+  font-size: 16px;
 }
 
 .photo-about {
@@ -186,9 +184,6 @@ footer .contact-box p {
   .contact {
     text-align: center;
   }
-}
-.logo {
-  max-height: 100px;
 }
 
 .email-link {
